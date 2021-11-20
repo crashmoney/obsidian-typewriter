@@ -1372,6 +1372,13 @@ body .kanban-plugin__grow-wrap::after {
   border: 0;
 }
 
+/* make checkboxes visible */
+.kanban-plugin__markdown-preview-view ol > li.task-list-item,
+.kanban-plugin__markdown-preview-view ul > li.task-list-item {
+  text-indent: 0;
+  padding-inline-start: 25px;
+}
+
 /* ------  ICON REPLACEMENT ------- */
 /* credit Minimal */
 body svg.right-triangle {
