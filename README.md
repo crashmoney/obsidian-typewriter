@@ -1,6 +1,6 @@
 # Obsidian Typewriter
 
-Obsidian Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focused writing experience.
+Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focused writing experience.
 
 ![cover](cover.jpg)
 
