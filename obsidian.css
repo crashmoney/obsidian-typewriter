@@ -749,10 +749,11 @@ input[type="checkbox"]:checked {
 .markdown-preview-section > .contains-task-list {
   padding-bottom: 0.5em;
 }
-/* strikethrough and fade completed items -modification by me */
 .markdown-preview-view ul > li.task-list-item.is-checked {
+  /* strike-through and fade completed items */
   text-decoration: line-through;
   color: var(--text-muted);
+  margin: 0 0 0 0;
 }
 .markdown-preview-view .task-list-item-checkbox {
   width: 18px;
