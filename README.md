@@ -2,6 +2,8 @@
 
 Obsidian Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focused writing experience.
 
+![cover](cover.jpg)
+
 ## Features
 - Careful choice in fonts; monospace in the editor and semi-proportional in preview and UI
 - Fonts have been base64 encoded, meaning you don't need to install them to use Typewriter
