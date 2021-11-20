@@ -1189,6 +1189,10 @@ body .modal-bg {
 .hotkey-search-container {
   padding: 0 0 20px 0;
 }
+.community-theme-filters-container .setting-item {
+  flex-grow: 1;
+  background-color: var(--background-secondary) !important;
+}
 .dropdown {
   border-color: var(--background-modifier-border);
   font-family: var(--font-ui);
