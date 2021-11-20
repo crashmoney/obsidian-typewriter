@@ -32,7 +32,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 ## Development
 This theme is currently under development. Issues and pull requests are welcome.
 
-Please see [CHANGELOG.md](CHANGELOG.md) for new features. Descriptions are also available under Releases.
+Please see the Release descriptions for changes between updates.
 
 ## Installation
 
