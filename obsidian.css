@@ -691,6 +691,7 @@ a.tag:hover {
   border-radius: 0.2em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+  font-size: inherit !important;
 }
 /* add support for multi-colored highlights 
    (see README for details on how to use) */
@@ -721,6 +722,18 @@ mark > em {
 /* bold highlights */
 mark > strong {
   font-weight: var(--bold-weight);
+}
+
+/* BOLD & ITALICS */
+em {
+  font-size: inherit !important;
+  color: inherit;
+}
+
+strong {
+  font-size: inherit !important;
+  font-family: inherit;
+  color: inherit;
 }
 
 /* CHECKBOXES (credit Minimal) */
@@ -781,6 +794,13 @@ input[type="checkbox"]:checked {
 .external-link:hover,
 .internal-link:hover {
   color: var(--text-accent-hover);
+}
+
+/* CITE */
+cite {
+  color: var(--text-muted);
+  text-align: end;
+  display: block;
 }
 
 /* REMOVE LINK AND TEXT ACCENTS */
