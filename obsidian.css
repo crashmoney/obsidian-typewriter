@@ -776,13 +776,6 @@ input[type="checkbox"]:checked {
   padding-left: 6px;
 }
 
-/* fade out and strikethrough checked items */
-.markdown-preview-view ul > li.task-list-item.is-checked {
-  text-decoration: line-through;
-  margin: -1px 1px;
-  color: var(--text-faint);
-}
-
 /* LINKS */
 .external-link:hover,
 .internal-link:hover {
