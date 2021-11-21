@@ -32,6 +32,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - [Typewriter Scroll by @death_au](https://github.com/deathau/cm-typewriter-scroll-obsidian)
 - [Better Word Count by @lukeleppan](https://github.com/lukeleppan/better-word-count)
 - [Day Planner by @lynchjames](https://github.com/lynchjames/obsidian-day-planner)
+- [Workbench by @ryanjamurphy](https://github.com/ryanjamurphy/workbench-obsidian)
 
 ## Development
 This theme is currently under development. Issues and pull requests are welcome.
