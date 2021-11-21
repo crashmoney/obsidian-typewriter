@@ -14,7 +14,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - Compatibility with Obsidian Hub
 - Multicolored highlights support (achieved through the use of inline color classes)
   - To use the multicolored highlights, use `<text class=orange>This is some orange text</text>`
-  - *Current colors supported: green, orange*
+  - *Current colors supported: green (light and dark mode), orange (light mode)*
 - Clean PDF export without link colors (achieved through YAML header `cssclass: nolink`)
 - Focus on the active line
 
@@ -26,8 +26,12 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 *This list is non-exhaustive; other plugins I haven't tested yet may work. The plugins on this list are plugins I've tested or added specific support for.*
 
 - [Calendar by @liamcain](https://github.com/liamcain/obsidian-calendar-plugin)
-- [Sliding Panes (Andy's Mode) by @death_au](https://github.com/deathau/sliding-panes-obsidian)
 - [Kanban by @mgmeyers](https://github.com/mgmeyers/obsidian-kanban)
+- [Sliding Panes (Andy's Mode) by @death_au](https://github.com/deathau/sliding-panes-obsidian)
+- [Tag Wrangler by @pjeby](https://github.com/pjeby/tag-wrangler)
+- [Typewriter Scroll by @death_au](https://github.com/deathau/cm-typewriter-scroll-obsidian)
+- [Better Word Count by @lukeleppan](https://github.com/lukeleppan/better-word-count)
+- [Day Planner by @lynchjames](https://github.com/lynchjames/obsidian-day-planner)
 
 ## Development
 This theme is currently under development. Issues and pull requests are welcome.
@@ -36,10 +40,12 @@ Please see the Release descriptions for changes between updates.
 
 ## Installation
 
-### Recommended
-> Typewriter is not yet available on the Obsidian theme store.
+### Recommended (Obsidian Theme Store)
 
-Installing from the Obsidian theme store, found in `Settings > Appearance > Themes > Manage`.
+1. Open Settings
+2. Navigate to Appearance
+3. Press the 'Manage' button
+4. Search for Typewriter and press Install
 
 ### Manual
 You can also manually install this theme.
@@ -47,8 +53,8 @@ You can also manually install this theme.
 1. Download `obsidian.css`
 2. Rename the file to `Typewriter.css`
 3. Move the file to your vault's theme directory
-	- Navigate to your vault's hidden `.obsidian/themes` folder
-	- Place `Typewriter.css` inside that folder
+  - Navigate to your vault's hidden `.obsidian/themes` folder
+  - Place `Typewriter.css` inside that folder
 
 ## Credits
 Inspiration and some code were taken from the following themes:
