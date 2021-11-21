@@ -453,7 +453,6 @@ body .markdown-source-view .CodeMirror .CodeMirror-activeline {
 /* internal links */
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
-  font-size: var(--font-adaptive-normal);
   color: var(--text-accent);
 }
 
@@ -791,6 +790,11 @@ input[type="checkbox"]:checked {
 }
 
 /* LINKS */
+.external-link,
+.internal-link {
+  font-size: inherit;
+}
+
 .external-link:hover,
 .internal-link:hover {
   color: var(--text-accent-hover);
