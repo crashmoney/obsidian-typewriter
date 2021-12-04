@@ -737,6 +737,72 @@ mark > strong {
   font-weight: var(--bold-weight);
 }
 
+/* LISTS */
+
+/* bullet points */
+ul {
+  padding-inline-start: 1rem;
+  padding-left: 16px;
+  list-style-position: outside;
+}
+
+ul {
+  list-style-type: disc;
+}
+ul ul {
+  list-style-type: circle;
+}
+ul ul ul {
+  list-style-type: "–  ";
+}
+ul ul ul ul {
+  list-style-type: "▪  ";
+}
+ul ul ul ul ul {
+  list-style-type: "◽  ";
+}
+ul ul ul ul ul ul {
+  list-style-type: "–  ";
+}
+ul ul ul ul ul ul ul {
+  list-style-type: disc;
+}
+ul ul ul ul ul ul ul ul {
+  list-style-type: circle;
+}
+ul ul ul ul ul ul ul ul ul {
+  list-style-type: "▪  ";
+}
+ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: "◽  ";
+}
+ul ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: "-  ";
+}
+ul ul ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: disc;
+}
+ul ul ul ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: circle;
+}
+ul ul ul ul ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: "▪  ";
+}
+ul ul ul ul ul ul ul ul ul ul ul ul ul ul ul {
+  list-style-type: "◽  ";
+}
+
+/* ordered lists */
+ol ul {
+  list-style-type: disc;
+}
+ol ul ul {
+  list-style-type: circle;
+}
+ol ul ul ul {
+  list-style-type: "- ";
+}
+
 /* BOLD & ITALICS */
 em {
   font-size: inherit !important;
