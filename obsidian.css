@@ -524,6 +524,11 @@ span.cm-hashtag.cm-hashtag-end {
   font-family: var(--font-monospace);
 }
 
+/* BLOCKQUOTES */
+.markdown-preview-view blockquote {
+  border-radius: var(--radius-m);
+}
+
 /* QUERIES */
 .markdown-preview-view .internal-query.is-embed {
   border-top: none;
