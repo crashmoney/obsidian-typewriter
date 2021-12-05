@@ -1650,6 +1650,7 @@ body .kanban-plugin__checkbox-label {
 }
 body .kanban-plugin__item-markdown ul {
   margin: 0;
+  overflow: hidden;
 }
 body .kanban-plugin__item-content-wrapper {
   box-shadow: none;
