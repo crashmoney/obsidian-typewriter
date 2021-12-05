@@ -14,6 +14,7 @@
 |_ Theme
   |_ HSL values
   |_ Font variables
+  |_ Sizes, weights, paddings
   |_ Dark theme
   |_ Light theme
   |_ Editor
@@ -27,18 +28,22 @@
   |_ Preview
     |_ Typography
     |_ Code
+    |_ Blockquotes
+    |_ Queries
     |_ Embeds
     |_ Headings
     |_ Horizontal rules
     |_ Tags
     |_ Highlights
+    |_ Lists
+    |_ Bold and italics
     |_ Checkboxes
     |_ Links
-    |_ Citations
+    |_ Citations (cite)
     |_ Remove link and text accents
   |_ UI
     |_ Fonts
-    |_ Queries
+    |_ Collapse indicators
     |_ Scroll bars
     |_ Status bar
     |_ Internal search
@@ -49,7 +54,7 @@
     |_ Sidebars
     |_ Resize bars
     |_ Settings
-|_ Plugin compatability
+|_ Plugins
   |_ Sliding Panes (Andy's Mode) by death_au
   |_ Kanban by mgmeyers
 |_ Icon replacement
@@ -517,7 +522,7 @@ span.cm-hashtag.cm-hashtag-end {
   font-size: var(--font-adaptive-normal);
 }
 
-/* CODE STYLING */
+/* CODE */
 .markdown-preview-view code {
   color: var(--text-code);
   font-size: inherit;
@@ -593,6 +598,11 @@ span.cm-hashtag.cm-hashtag-end {
 }
 .internal-query.is-embed .search-result-file-matches {
   border-bottom: 0;
+}
+
+/* remove quotation marks on queries */
+.markdown-preview-view .internal-query.is-embed .internal-query-header-title:before, .markdown-preview-view .internal-query.is-embed .internal-query-header-title:after {
+  content: "";
 }
 
 /* EMBEDS */
