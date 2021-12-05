@@ -1212,6 +1212,15 @@ input.document-replace-input:focus {
   color: var(--text-normal);
 }
 
+/* wrap long titles */
+.nav-file-title,
+.nav-folder-title,
+.nav-file-title-content,
+.nav-folder-title-content {
+  white-space: normal;
+  width: auto;
+}
+
 /* relationship lines in folders */
 .nav-folder-children {
   margin-left: 19px; /* adjust this value to adjust where the line appears in relation to the folder toggle */
@@ -1223,27 +1232,9 @@ input.document-replace-input:focus {
 .nav-folder-children:hover {
   border-left-color: rgba(118,158,165,0.4);
 }
-
-/* wrap file content */
-.nav-file-title,
-.nav-folder-title-content,
-.nav-file-title-content {
-  white-space: normal !important;
-}
-.nav-file-title-content {
-  width: 100%;
-  white-space: normal;
-  cursor: var(--cursor);
-  display: flex;
-  align-items: flex-start;
-}
-.nav-folder-title-content {
-  display: flex;
-  align-items: center;
-  text-overflow: ellipsis;
-  flex-grow: 1;
-  padding-left: 4px;
-  overflow: hidden;
+/* remove root relationship line */
+.nav-folder.mod-root > .nav-folder-children {
+  margin-left: -2px;
 }
 
 /* hide root vault name */
