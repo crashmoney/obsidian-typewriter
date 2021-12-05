@@ -1204,6 +1204,13 @@ input.document-replace-input:focus {
 .titlebar-text {
   display: none;
 }
+body:not(.is-fullscreen):not(.is-mobile) .titlebar {
+  background:var(--background-secondary);
+  border-bottom:var(--border-width) solid var(--background-modifier-border);
+  height:var(--titlebar-height) !important;
+  top:0 !important;
+  padding-top:0 !important;
+}
 
 /* FILE EXPLORER */
 /* set file title color */
