@@ -526,7 +526,56 @@ span.cm-hashtag.cm-hashtag-end {
 
 /* BLOCKQUOTES */
 .markdown-preview-view blockquote {
-  border-radius: var(--radius-m);
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem 1rem 3rem;
+  color: var(--text-normal);
+  line-height: 1.4em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-left: 4px var(--text-accent) solid;
+  border-right: transparent;
+  background: linear-gradient(135deg, var(--base4), var(--base3));
+  margin-bottom: 2em;
+  margin-right: 0 !important;
+  width: 90%;
+}
+
+.markdown-preview-view blockquote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--text-accent), var(--base3));
+}
+
+.markdown-preview-view blockquote::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(31, 178, 129, 0.9), var(--base3));
+}
+
+.markdown-preview-view blockquote p {
+  position: relative;
+}
+
+.markdown-preview-view blockquote p:first-of-type::before {
+  content: '“';
+  font: 14px/20px italic Times, serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: var(--text-accent);
+  position: absolute;
+  top: 0.1rem;
+  left: -1.8rem;
 }
 
 /* QUERIES */
@@ -1205,11 +1254,11 @@ input.document-replace-input:focus {
   display: none;
 }
 body:not(.is-fullscreen):not(.is-mobile) .titlebar {
-  background:var(--background-secondary);
-  border-bottom:var(--border-width) solid var(--background-modifier-border);
-  height:var(--titlebar-height) !important;
-  top:0 !important;
-  padding-top:0 !important;
+  background: var(--background-secondary);
+  border-bottom: var(--border-width) solid var(--background-modifier-border);
+  height: var(--titlebar-height) !important;
+  top: 0 !important;
+  padding-top: 0 !important;
 }
 
 /* FILE EXPLORER */
