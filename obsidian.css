@@ -565,7 +565,7 @@ span.cm-hashtag.cm-hashtag-end {
   bottom: 0;
   left: 0px;
   height: 2px;
-  background: linear-gradient(90deg, rgba(31, 178, 129, 0.9), var(--base3));
+  background: linear-gradient(90deg, var(--text-accent), var(--base3));
 }
 
 .markdown-preview-view blockquote p {
