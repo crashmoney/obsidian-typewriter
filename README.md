@@ -7,16 +7,19 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 ## Features
 - Careful choice in fonts; monospace in the editor and semi-proportional in preview and UI
 - Fonts have been base64 encoded, meaning you don't need to install them to use Typewriter
-  - This also means that the fonts used here are available on mobile
+  - This means that the fonts used here are available on mobile
 - Vim cursor support
+- Long titles in the file explorer will soft-wrap
+  - Useful for mobile and small displays
 - Cool dark mode and warm light mode
 - Compatibility with community plugins (see [Plugin Compatibility](https://github.com/crashmoney/obsidian-typewriter/new/main?readme=1#recommended-plugins))
 - Compatibility with Obsidian Hub
 - Multicolored highlights support (achieved through the use of inline color classes)
   - To use the multicolored highlights, use `<text class=orange>This is some orange text</text>`
   - *Current colors supported: green (light and dark mode), orange (light mode)*
-- Clean PDF export without link colors (achieved through YAML header `cssclass: nolink`)
-- Focus on the active line
+- Clean preview without link colors (achieved through YAML header `cssclass: nolink`)
+  - Uncomment the `@print` snippet in the theme file to get a clean PDF export
+- Highlight on the active line for focus
 
 ## Recommended Plugins
 - [Typewriter Scroll by @death_au](https://github.com/deathau/cm-typewriter-scroll-obsidian) for the full typewriter experience
@@ -37,7 +40,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 ## Development
 This theme is currently under development. Issues and pull requests are welcome.
 
-Please see the Release descriptions for changes between updates.
+Please see [Releases](https://github.com/crashmoney/obsidian-typewriter/releases) for changes between updates.
 
 ## Installation
 
