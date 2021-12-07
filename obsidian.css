@@ -1666,7 +1666,6 @@ body .kanban-plugin__checkbox-label {
 }
 body .kanban-plugin__item-markdown ul {
   margin: 0;
-  overflow: hidden;
 }
 body .kanban-plugin__item-content-wrapper {
   box-shadow: none;
@@ -1682,6 +1681,11 @@ body .kanban-plugin__grow-wrap::after {
 .kanban-plugin__markdown-preview-view ul > li.task-list-item {
   text-indent: 0;
   padding-inline-start: 25px;
+}
+
+/* remove scroll bars on cards */
+.kanban-plugin__markdown-preview-view>div>*:first-child, .kanban-plugin__markdown-preview-view>div>.frontmatter-container+* {
+  overflow: hidden;
 }
 
 /* ------  ICON REPLACEMENT ------- */
