@@ -952,25 +952,21 @@ cite {
   display: block;
 }
 
-/* REMOVE LINK AND TEXT ACCENTS */
+/* REMOVE LINK AND TEXT ACCENTS (cssclass: nolink) */
 /* see README for details */
 .nolink a {
-  color: var(--text-normal) !important;
+  color: var(--text-normal);
   text-decoration: none !important;
-  font-weight: var(--normal-weight) !important;
 }
+/* links and tags show accent color when selected/hover */
+.nolink a:hover,
 .nolink a::selection {
   color: var(--text-accent);
 }
-/* uncomment this in order to get a clean export
-   without link/tag colors
-.nolink @media print {
-  body a {
-  color: var(--text-normal) !important;
-  text-decoration: none !important;
-  font-weight: var(--normal-weight) !important;
+/* removes tags */
+.nolink .tag {
+  display: none;
 }
-*/
 
 /* --------------- UI ------------- */
 
