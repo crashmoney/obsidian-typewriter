@@ -17,8 +17,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - Multicolored highlights support (achieved through the use of inline color classes)
   - To use the multicolored highlights, use `<text class=orange>This is some orange text</text>`
   - *Current colors supported: green (light and dark mode), orange (light mode)*
-- Clean preview without link colors (achieved through YAML header `cssclass: nolink`)
-  - Uncomment the `@print` snippet in the theme file to get a clean PDF export
+- Clean preview without link colors or tags (achieved through YAML header `cssclass: nolink`)
 - Highlight on the active line for focus
 
 ## Recommended Plugins
