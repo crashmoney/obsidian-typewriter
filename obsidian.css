@@ -1685,6 +1685,19 @@ body .kanban-plugin__grow-wrap::after {
   border: 0;
 }
 
+/* make box-shadow of a card being dragged over text-accent */
+body .kanban-plugin__drag-container
+> .kanban-plugin__item-wrapper
+> .kanban-plugin__item {
+  box-shadow: hsla(var(--text-accent), 0.8);
+}
+body
+  .kanban-plugin__drag-container
+  > .kanban-plugin__lane-wrapper
+  > .kanban-plugin__lane {
+  box-shadow: hsla(var(--text-accent), 0.5);
+}
+
 /* make checkboxes visible */
 .kanban-plugin__markdown-preview-view ol > li.task-list-item,
 .kanban-plugin__markdown-preview-view ul > li.task-list-item {
@@ -1693,7 +1706,7 @@ body .kanban-plugin__grow-wrap::after {
 }
 
 /* remove scroll bars on cards */
-.kanban-plugin__markdown-preview-view>div>*:first-child, .kanban-plugin__markdown-preview-view>div>.frontmatter-container+* {
+.kanban-plugin__markdown-preview-view>div>* {
   overflow: hidden;
 }
 
