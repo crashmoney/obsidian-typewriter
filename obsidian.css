@@ -551,7 +551,6 @@ span.cm-hashtag.cm-hashtag-end {
   margin-right: 0 !important;
   width: 90%;
 }
-
 .markdown-preview-view blockquote::before {
   content: '';
   position: absolute;
@@ -560,7 +559,6 @@ span.cm-hashtag.cm-hashtag-end {
   height: 2px;
   background: linear-gradient(90deg, var(--text-accent), var(--base3));
 }
-
 .markdown-preview-view blockquote::after {
   content: '';
   position: absolute;
@@ -569,11 +567,10 @@ span.cm-hashtag.cm-hashtag-end {
   height: 2px;
   background: linear-gradient(90deg, var(--text-accent), var(--base3));
 }
-
+/* quotation marks */
 .markdown-preview-view blockquote p {
   position: relative;
 }
-
 .markdown-preview-view blockquote p:first-of-type::before {
   content: '“';
   font: 14px/20px italic Times, serif;
