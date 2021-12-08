@@ -992,6 +992,18 @@ input.prompt-input,
   font-family: var(--font-ui);
 }
 
+/* GLOBAL SEARCH */
+/* search information */
+.search-info-children {
+  padding-left: 20px;
+  border-left: 1px solid var(--background-modifier-border);
+  margin: 1px 0;
+}
+.search-info-children:hover {
+  border-left-color: rgba(118,158,165,0.4);
+  transition: 300ms ease-in;
+}
+
 /* COLLAPSE INDICATORS */
 .markdown-preview-view .list-collapse-indicator {
   margin-left: -45px;
