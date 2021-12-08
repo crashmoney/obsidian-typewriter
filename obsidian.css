@@ -43,6 +43,7 @@
     |_ Remove link and text accents
   |_ UI
     |_ Fonts
+    |_ Global search
     |_ Collapse indicators
     |_ Scroll bars
     |_ Status bar
@@ -970,7 +971,7 @@ cite {
 
 /* --------------- UI ------------- */
 
-/* UI FONT */
+/* UI FONTS */
 .workspace-leaf.mod-active .view-header-title,
 .nav-file-title-content,
 .nav-folder-title-content,
