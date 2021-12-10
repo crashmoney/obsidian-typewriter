@@ -1019,7 +1019,7 @@ cite {
 /* --------------- UI ------------- */
 
 /* UI FONTS */
-.workspace-leaf.mod-active .view-header-title,
+.view-header,
 .nav-file-title-content,
 .nav-folder-title-content,
 .prompt,
