@@ -151,16 +151,16 @@ for example links.
   --h1: 1.5em;
   --h2: 1.25em;
   --h3: 1.25em;
-  --h4: 1em;
-  --h5: 1em;
-  --h6: 1em;
+  --h4: 1.15em;
+  --h5: 1.15em;
+  --h6: 1.15em;
 
-  --h1-weight: 700;
-  --h2-weight: 650;
-  --h3-weight: 600;
-  --h4-weight: 550;
-  --h5-weight: 550;
-  --h6-weight: 550;
+  --h1-weight: 800;
+  --h2-weight: 750;
+  --h3-weight: 700;
+  --h4-weight: 650;
+  --h5-weight: 650;
+  --h6-weight: 600;
 
   --h1-color: var(--text-normal);
   --h2-color: var(--text-normal);
