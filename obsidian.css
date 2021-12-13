@@ -1321,9 +1321,7 @@ input.document-replace-input:focus {
   display: none;
 }
 body:not(.is-fullscreen):not(.is-mobile) .titlebar {
-  background: var(--background-secondary);
-  border-bottom: var(--border-width) solid var(--background-modifier-border);
-  height: var(--titlebar-height) !important;
+  background: var(--background-primary);
   top: 0 !important;
   padding-top: 0 !important;
 }
