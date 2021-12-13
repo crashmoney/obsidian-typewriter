@@ -8,9 +8,11 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - Careful choice in fonts; monospace in the editor and semi-proportional in preview and UI
 - Fonts have been base64 encoded, meaning you don't need to install them to use Typewriter
   - This means that the fonts used here are available on mobile
+- Markdown formatting symbols are faded and shrunk, letting you focus on words instead
 - Vim cursor support
 - Long titles in the file explorer will soft-wrap
   - Useful for mobile and small displays
+- Seamless embeds, without file titles or margins
 - Cool dark mode and warm light mode
 - Compatibility with community plugins (see [Plugin Compatibility](https://github.com/crashmoney/obsidian-typewriter/new/main?readme=1#recommended-plugins))
 - Compatibility with Obsidian Hub
