@@ -977,9 +977,27 @@ input[type="checkbox"]:checked {
 .markdown-preview-view .task-list-item {
   padding-inline-start: 0;
 }
-.side-dock-plugin-panel-inner {
-  padding-right: 6px;
-  padding-left: 6px;
+
+/* numbered checklists */
+.markdown-preview-view ol > li.task-list-item.is-checked {
+  /* strike-through and fade completed items */
+  text-decoration: line-through;
+  color: var(--text-muted);
+  margin: 0 0 0 0;
+}
+.markdown-preview-view ol > li.task-list-item {
+  padding-inline-start: 16px;
+}
+.is-mobile .markdown-preview-view ol > li.task-list-item {
+  padding-inline-start: 13px;
+}
+.is-mobile .markdown-preview-view ol > input[type=checkbox].task-list-item-checkbox {
+  top: 4.5px;
+}
+
+/* align mobile checkboxes with text */
+.is-mobile .markdown-preview-view input[type=checkbox].task-list-item-checkbox {
+  top: 4.5px;
 }
 
 /* LINKS */
@@ -1748,6 +1766,12 @@ body
 .kanban-plugin__markdown-preview-view ul > li.task-list-item {
   text-indent: 0;
   padding-inline-start: 25px;
+}
+/* on mobile too */
+.is-mobile .kanban-plugin__markdown-preview-view ol > li.task-list-item,
+.kanban-plugin__markdown-preview-view ul > li.task-list-item {
+  text-indent: 0;
+  padding-inline-start: 28px;
 }
 
 /* remove scroll bars on cards */
