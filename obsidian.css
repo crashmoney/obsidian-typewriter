@@ -1779,6 +1779,11 @@ body
   overflow: hidden;
 }
 
+/* CITATIONS PLUGIN */
+.zoteroCitekey {
+  font-family: var(--font-monospace) !important;
+}
+
 /* ------  ICON REPLACEMENT ------- */
 /* credit Minimal */
 body svg.right-triangle {
@@ -2539,4 +2544,5 @@ community:
 - better-word-count
 - obsidian-day-planner
 - workbench-obsidian
+- obsidian-citation-plugin
 */
