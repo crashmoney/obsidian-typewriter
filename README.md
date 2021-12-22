@@ -20,8 +20,10 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
   - To use the multicolored highlights, use `<text class=orange>This is some orange text</text>`
   - See cover image for example (green highlight on "enabled by default")
   - *Current colors supported: green (light and dark mode), orange (light mode)*
+  - available only in Reading Mode
 - Clean preview without link colors or tags (achieved through YAML header `cssclass: nolink`)
 - Highlight on the active line for focus
+  - only available in Source Mode
 
 ## Recommended Plugins
 - [Typewriter Scroll by @death_au](https://github.com/deathau/cm-typewriter-scroll-obsidian) for the full typewriter experience
