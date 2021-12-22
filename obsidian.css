@@ -485,6 +485,11 @@ body .markdown-source-view .CodeMirror .CodeMirror-activeline {
   word-break: break-all;
 }
 
+/* make links inherit font-size in Live Preview */
+.is-live-preview.mod-cm6 .cm-underline {
+  font-size: inherit;
+}
+
 /* TAGS */
 .cm-s-obsidian span.cm-hashtag {
   background-color: transparent;
