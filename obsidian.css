@@ -59,6 +59,7 @@
 |_ Plugins
   |_ Sliding Panes (Andy's Mode) by death_au
   |_ Kanban by mgmeyers
+  |_ Citations by hans
 |_ Icon replacement
 |_ Obsidian Hub
 
@@ -149,11 +150,17 @@ for example links.
   --font-smallest: 10px;
 
   --h1: 1.5em;
+  --h1-live-preview: 1.3em;
   --h2: 1.25em;
+  --h2-live-preview: 1.2em;
   --h3: 1.25em;
+  --h3-live-preview: 1.1em;
   --h4: 1.15em;
+  --h4-live-preview: 1.05em;
   --h5: 1.15em;
+  --h5-live-preview: 1.05em;
   --h6: 1.15em;
+  --h6-live-preview: 1.05em;
 
   --h1-weight: 800;
   --h2-weight: 750;
@@ -167,7 +174,7 @@ for example links.
   --h3-color: var(--text-normal);
   --h4-color: var(--text-normal);
   --h5-color: var(--text-normal);
-  --h6-color: var(--text-muted);
+  --h6-color: var(--text-normal);
 
   --normal-weight: 400; /* Switch to 300 if you want thinner default text */
   --bold-weight: 800; /* Switch to 700 if you want thicker bold text */
@@ -429,10 +436,18 @@ body .markdown-source-view .CodeMirror .CodeMirror-activeline {
 .cm-formatting-quote {
   color: var(--text-faint) !important;
 }
+/* live preview */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  border: 0 solid var(--text-accent);
+  border-left-width: 5px;
+  background-color: var(--background-primary-alt);
+  margin-left: 3rem !important;
+  width: 75%;
+}
 
 /* footnotes */
 .cm-s-obsidian span.cm-footref {
-  font-size: var(--font-adaptive-small);
+  font-size: var(--font-adaptive-small) !important;
 }
 .cm-s-obsidian pre.HyperMD-footnote {
   font-size: var(--font-adaptive-small);
@@ -705,12 +720,27 @@ h6 {
   right: -1em;
   color: var(--text-accent);
   cursor: pointer;
-
 }
 .markdown-embed-link:hover, .file-embed-link:hover {
   position: absolute;
   top: 0em;
   right: -1em;
+  color: var(--text-accent-hover);
+  cursor: pointer;
+}
+/* adjust for live preview */
+.is-live-preview .markdown-embed-link,
+.is-live-preview .file-embed-link {
+  position: absolute;
+  top: 0.6em;
+  right: 0.75em;
+  color: var(--text-accent);
+  cursor: pointer;
+}
+.is-live-preview .markdown-embed-link:hover, .file-embed-link:hover {
+  position: absolute;
+  top: 0.6em;
+  right: 0.75em;
   color: var(--text-accent-hover);
   cursor: pointer;
 }
@@ -743,6 +773,11 @@ li .markdown-embed li.task-list-item {
   color: var(--h1-color);
   font-weight: var(--h1-weight);
   letter-spacing: -0.02em;
+  display: contents;
+}
+.is-live-preview .HyperMD-header-1,
+.is-live-preview .cm-header-1 {
+  font-size: var(--h1-live-preview);
 }
 .markdown-preview-view h2,
 .HyperMD-header-2,
@@ -751,6 +786,11 @@ li .markdown-embed li.task-list-item {
   color: var(--h2-color);
   font-weight: var(--h2-weight);
   letter-spacing: -0.02em;
+  display: contents;
+}
+.is-live-preview .HyperMD-header-2,
+.is-live-preview .cm-header-2 {
+  font-size: var(--h2-live-preview);
 }
 .markdown-preview-view h3,
 .HyperMD-header-3,
@@ -759,6 +799,11 @@ li .markdown-embed li.task-list-item {
   color: var(--h3-color);
   font-weight: var(--h3-weight);
   letter-spacing: -0.02em;
+  display: contents;
+}
+.is-live-preview .HyperMD-header-3,
+.is-live-preview .cm-header-3 {
+  font-size: var(--h3-live-preview);
 }
 .markdown-preview-view h4,
 .HyperMD-header-4,
@@ -767,6 +812,11 @@ li .markdown-embed li.task-list-item {
   color: var(--h4-color);
   font-weight: var(--h4-weight);
   letter-spacing: -0.02em;
+  display: contents;
+}
+.is-live-preview .HyperMD-header-3,
+.is-live-preview .cm-header-3 {
+  font-size: var(--h4-live-preview);
 }
 .markdown-preview-view h5,
 .HyperMD-header-5,
@@ -774,6 +824,11 @@ li .markdown-embed li.task-list-item {
   font-size: var(--h5);
   color: var(--h5-color);
   font-weight: var(--h5-weight);
+  display: contents;
+}
+.is-live-preview .HyperMD-header-5,
+.is-live-preview .cm-header-5 {
+  font-size: var(--h5-live-preview);
 }
 .markdown-preview-view h6,
 .HyperMD-header-6,
@@ -781,6 +836,11 @@ li .markdown-embed li.task-list-item {
   font-size: var(--h6);
   color: var(--h6-color);
   font-weight: var(--h6-weight);
+  display: contents;
+}
+.is-live-preview .HyperMD-header-6,
+.is-live-preview .cm-header-6 {
+  font-size: var(--h6-live-preview);
 }
 
 /* HORIZONTAL RULES */
@@ -1054,7 +1114,8 @@ cite {
 .empty-state-title,
 .empty-state-action,
 input.prompt-input,
-.suggestion-hotkey {
+.suggestion-hotkey,
+button {
   font-family: var(--font-ui);
 }
 
