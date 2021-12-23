@@ -781,7 +781,6 @@ li .markdown-embed li.task-list-item {
   color: var(--h1-color);
   font-weight: var(--h1-weight);
   letter-spacing: -0.02em;
-  display: contents;
 }
 .is-live-preview .HyperMD-header-1,
 .is-live-preview .cm-header-1 {
@@ -794,7 +793,6 @@ li .markdown-embed li.task-list-item {
   color: var(--h2-color);
   font-weight: var(--h2-weight);
   letter-spacing: -0.02em;
-  display: contents;
 }
 .is-live-preview .HyperMD-header-2,
 .is-live-preview .cm-header-2 {
@@ -807,7 +805,6 @@ li .markdown-embed li.task-list-item {
   color: var(--h3-color);
   font-weight: var(--h3-weight);
   letter-spacing: -0.02em;
-  display: contents;
 }
 .is-live-preview .HyperMD-header-3,
 .is-live-preview .cm-header-3 {
@@ -820,7 +817,6 @@ li .markdown-embed li.task-list-item {
   color: var(--h4-color);
   font-weight: var(--h4-weight);
   letter-spacing: -0.02em;
-  display: contents;
 }
 .is-live-preview .HyperMD-header-3,
 .is-live-preview .cm-header-3 {
@@ -832,7 +828,6 @@ li .markdown-embed li.task-list-item {
   font-size: var(--h5);
   color: var(--h5-color);
   font-weight: var(--h5-weight);
-  display: contents;
 }
 .is-live-preview .HyperMD-header-5,
 .is-live-preview .cm-header-5 {
@@ -844,7 +839,6 @@ li .markdown-embed li.task-list-item {
   font-size: var(--h6);
   color: var(--h6-color);
   font-weight: var(--h6-weight);
-  display: contents;
 }
 .is-live-preview .HyperMD-header-6,
 .is-live-preview .cm-header-6 {
