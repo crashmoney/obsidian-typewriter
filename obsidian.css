@@ -400,6 +400,9 @@ body {
 .markdown-source-view {
   --default-font: var(--text-editor);
 }
+.markdown-source-view.mod-cm6 .cm-selection {
+  font-size: inherit !important;
+}
 
 /* HIGHLIGHT ACTIVE LINE */
 body .markdown-source-view .CodeMirror .CodeMirror-activeline {
