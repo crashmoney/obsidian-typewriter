@@ -19,9 +19,8 @@ Steps to reproduce the behavior:
 
 ## Information
  - OS: [e.g. iOS]
- - Version of Typewriter: [e.g. v1.0.9]
 
-Add other context about the problem here
+Add other context about the problem here. (Please make sure you've updated the theme before opening an issue.)
 
 ## Suggestions/Workarounds
 Add any suggestions/workarounds on how to resolve the issue here.
