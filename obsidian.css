@@ -691,7 +691,8 @@ body:not(.is-mobile):not(.zoom-off) .view-content .markdown-preview-view .image-
   margin: 0;
 }
 .markdown-preview-view .markdown-embed-content,
-.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+.markdown-preview-view .markdown-embed-content > .markdown-preview-view,
+.is-live-preview .markdown-embed-content {
   max-height: unset;
 }
 .markdown-preview-view .markdown-embed-content > :first-child {
