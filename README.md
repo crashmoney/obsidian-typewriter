@@ -22,8 +22,9 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
   - *Current colors supported: green (light and dark mode), orange (light mode)*
   - available only in Reading Mode
 - Clean preview without link colors or tags (achieved through YAML header `cssclass: nolink`)
+  - available only in Reading Mode
 - Highlight on the active line for focus
-  - only available in Source Mode
+  - available on desktop only
 
 ## Recommended Plugins
 - [Typewriter Scroll by @death_au](https://github.com/deathau/cm-typewriter-scroll-obsidian) for the full typewriter experience
@@ -40,7 +41,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - [Better Word Count by @lukeleppan](https://github.com/lukeleppan/better-word-count)
 - [Day Planner by @lynchjames](https://github.com/lynchjames/obsidian-day-planner)
 - [Workbench by @ryanjamurphy](https://github.com/ryanjamurphy/workbench-obsidian)
-- [Citations by @hans](https://github.com/hans/obsidian-citation-plugin/tree/0.1.3)
+- [Citations by @hans](https://github.com/hans/obsidian-citation-plugin)
 
 ## Development
 This theme is currently under development. Issues and pull requests are welcome.
@@ -49,7 +50,7 @@ Please see [Releases](https://github.com/crashmoney/obsidian-typewriter/releases
 
 ## Installation
 
-### Recommended (Obsidian Theme Store)
+### Recommended (Obsidian Theme Manager)
 
 1. Open Settings
 2. Navigate to Appearance
@@ -66,7 +67,7 @@ You can also manually install this theme.
   - Place `Typewriter.css` inside that folder
 
 ## Credits
-Inspiration and some code were taken from the following themes:
+Inspiration and/or some code were taken from the following:
 
 - [Minimal by @kepano](https://github.com/kepano/obsidian-minimal)
 - [Yin and Yang by @chetachiezikeuzor](https://github.com/chetachiezikeuzor/Yin-and-Yang-Theme)
