@@ -1138,6 +1138,7 @@ h5:hover .heading-collapse-indicator.collapse-indicator svg,
 .markdown-preview-view ul .is-collapsed::after {
   content: "...";
   color: var(--text-accent);
+  padding: 5px;
 }
 
 /* align with rest of text */
