@@ -25,6 +25,7 @@
     |_ Markdown formatting
     |_ Tags
     |_ Vim cursor
+    |_ Fold toggles
   |_ Preview
     |_ Typography
     |_ Code
@@ -42,6 +43,7 @@
     |_ Links
     |_ Citations (cite)
     |_ Remove link and text accents
+    |_ Fold toggles
   |_ UI
     |_ Fonts
     |_ Global search
@@ -541,6 +543,16 @@ span.cm-hashtag.cm-hashtag-end {
   -moz-animation: blink 1.06s steps(1) infinite;
   animation: blink 1.06s steps(1) infinite;
   background-color: var(--text-accent);
+}
+
+/* FOLD TOGGLES */
+/* hide except when hovered/collapsed */
+.markdown-source-view.mod-cm6 .fold-gutter {
+  opacity: 0 !important;
+}
+.markdown-source-view.mod-cm6 .fold-gutter.is-collapsed,
+.markdown-source-view.mod-cm6 .fold-gutter:hover {
+  opacity: 1;
 }
 
 /* ------------ PREVIEW ------------ */
@@ -1100,6 +1112,39 @@ cite {
   display: none;
 }
 
+/* FOLD TOGGLES */
+/* hide except when hovered/collapsed */
+.markdown-preview-view .heading-collapse-indicator.collapse-indicator svg,
+.markdown-preview-view ol > li .collapse-indicator svg,
+.markdown-preview-view ul > li .collapse-indicator svg {
+  opacity: 0;
+}
+h1:hover .heading-collapse-indicator.collapse-indicator svg,
+h2:hover .heading-collapse-indicator.collapse-indicator svg,
+h3:hover .heading-collapse-indicator.collapse-indicator svg,
+h4:hover .heading-collapse-indicator.collapse-indicator svg,
+h5:hover .heading-collapse-indicator.collapse-indicator svg,
+.markdown-preview-view .is-collapsed .collapse-indicator svg,
+.markdown-preview-view .collapse-indicator:hover svg {
+  opacity: 1;
+  transition: ease-in-out 200ms;
+}
+.markdown-preview-view div.is-collapsed h1::after,
+.markdown-preview-view div.is-collapsed h2::after,
+.markdown-preview-view div.is-collapsed h3::after,
+.markdown-preview-view div.is-collapsed h4::after,
+.markdown-preview-view div.is-collapsed h5::after,
+.markdown-preview-view ol .is-collapsed::after,
+.markdown-preview-view ul .is-collapsed::after {
+  content: "...";
+  color: var(--text-accent);
+}
+
+/* align with rest of text */
+.markdown-preview-view .heading-collapse-indicator {
+  padding: 0px 0px;
+}
+
 /* --------------- UI ------------- */
 
 /* UI FONTS */
@@ -1525,7 +1570,7 @@ body .modal-bg {
   padding: 6px 0px 6px 0px;
 }
 
-/* focus mode */
+/* focus mode – make sidebars the same color as background when collapsed */
 .workspace-ribbon.mod-left.is-collapsed {
   background-color: var(--background-primary);
 }
