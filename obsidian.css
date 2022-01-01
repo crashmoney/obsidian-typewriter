@@ -436,8 +436,13 @@ body .markdown-source-view .CodeMirror .CodeMirror-activeline,
 }
 
 /* lists */
+/* source mode */
 .cm-formatting-list {
   color: var(--text-faint) !important;
+}
+/* live preview */
+.list-bullet {
+  font-family: "Avenir Next", Avenir, sans-serif;
 }
 
 /* quotes */
