@@ -58,6 +58,7 @@
     |_ Sidebars
     |_ Resize bars
     |_ Settings
+    |_ Mobile styling
 |_ Plugins
   |_ Sliding Panes (Andy's Mode) by death_au
   |_ Kanban by mgmeyers
@@ -1720,7 +1721,7 @@ body .modal-bg {
   --radius-m: 8px;
 }
 
-/* Folding on mobile */
+/* Folding toggles on mobile */
 .ͼ1 .cm-foldGutter .cm-gutterElement {
   cursor: var(--cursor);
 }
@@ -1728,10 +1729,13 @@ body .modal-bg {
   background: transparent;
   border-color: transparent;
 }
+
 .is-mobile .empty-state-action {
   border-radius: var(--radius-m);
   font-size: var(--font-adaptive-small);
 }
+
+/* Mobile workspace */
 .is-mobile .workspace-drawer-header {
   padding: 20px 10px 0 25px;
 }
@@ -2466,6 +2470,12 @@ body
 /* CITATIONS PLUGIN */
 .zoteroCitekey {
   font-family: var(--font-monospace) !important;
+}
+
+/* JOURNEY PLUGIN */
+/* make Journey modals follow theme fonts */
+.journey-search-form select, .journey-search-form input[type=text], .journey-input-button {
+  font-family: var(--font-ui);
 }
 
 /* ------  ICON REPLACEMENT ------- */
@@ -3229,4 +3239,5 @@ community:
 - obsidian-day-planner
 - workbench-obsidian
 - obsidian-citation-plugin
+- obsidian-journey-plugin
 */

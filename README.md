@@ -42,6 +42,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - [Day Planner by @lynchjames](https://github.com/lynchjames/obsidian-day-planner)
 - [Workbench by @ryanjamurphy](https://github.com/ryanjamurphy/workbench-obsidian)
 - [Citations by @hans](https://github.com/hans/obsidian-citation-plugin)
+- [Journey by @akaalias](https://github.com/akaalias/obsidian-journey-plugin)
 
 ## Development
 This theme is currently under development. Issues and pull requests are welcome.
