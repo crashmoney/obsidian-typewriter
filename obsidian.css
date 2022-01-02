@@ -129,12 +129,18 @@ for example links.
 /* ------------ FONTS ------------ */
 :root {
   /* Preview */
+  /* Reading Mode */
   --text: "iA Writer Quattro V", "Roboto Mono", Menlo, Calibri, -apple-system,
     sans-serif;
 
   /* Editor */
+  /* Editor - Source Mode */
   --text-editor: "iA Writer Mono V", "SF Mono", "Roboto Mono", Menlo, monospace;
 
+  /* Editor - Live Preview */
+  --text-live-preview: "iA Writer Quattro V", "Roboto Mono", Menlo, Calibri, -apple-system,
+  sans-serif;
+  
   /* Code */
   --font-monospace: "JetBrains Mono", "SF Mono", "Roboto Mono", Menlo, monospace;
 
@@ -400,8 +406,13 @@ body {
 .cm-s-obsidian * {
   font-size: var(--font-adaptive-normal);
 }
+/* source and legacy mode font */
 .markdown-source-view {
   --default-font: var(--text-editor);
+}
+/* live preview font */
+.is-live-preview .cm-content {
+  font-family: var(--text-live-preview);
 }
 .markdown-source-view.mod-cm6 .cm-selection {
   font-size: inherit !important;
