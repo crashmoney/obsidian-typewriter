@@ -128,12 +128,10 @@ for example links.
 
 /* ------------ FONTS ------------ */
 :root {
-  /* Preview */
   /* Reading Mode */
   --text: "iA Writer Quattro V", "Roboto Mono", Menlo, Calibri, -apple-system,
     sans-serif;
 
-  /* Editor */
   /* Editor - Source Mode */
   --text-editor: "iA Writer Mono V", "SF Mono", "Roboto Mono", Menlo, monospace;
 
@@ -2476,6 +2474,11 @@ body
 .kanban-plugin__markdown-preview-view ul > li.task-list-item {
   text-indent: 0;
   padding-inline-start: 28px;
+}
+
+/* make numbered lines visible */
+.kanban-plugin__markdown-preview-view ol {
+  padding-inline-start: 33px;
 }
 
 /* remove scroll bars on cards */
