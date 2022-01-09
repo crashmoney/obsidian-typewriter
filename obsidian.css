@@ -418,7 +418,7 @@ body {
 
 /* HIGHLIGHT ACTIVE LINE */
 body .markdown-source-view .CodeMirror .CodeMirror-activeline,
-.markdown-source-view.mod-cm6 .cm-active {
+.markdown-source-view.mod-cm6 .cm-active.cm-line {
   background: var(--background-secondary);
 }
 
