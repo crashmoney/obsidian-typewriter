@@ -975,7 +975,7 @@ ul ul ul ul ul ul ul {
   list-style-type: circle;
 }
 ul ul ul ul ul ul ul ul {
-  list-style-type: "-  ";
+  list-style-type: "–  ";
 }
 ul ul ul ul ul ul ul ul ul {
   list-style-type: "▪  ";
@@ -1038,7 +1038,7 @@ input[type="checkbox"]:hover {
 .checklist-plugin-main .group .compact > .toggle .checked,
 .is-flashing input[type="checkbox"]:checked,
 input[type="checkbox"]:checked {
-  background-color: var(--background-modifier-accent) !important;
+  background-color: var(--text-accent) !important;
   border: 1px solid var(--background-modifier-accent);
   background-position: center;
   background-size: 70%;
