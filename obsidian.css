@@ -494,6 +494,11 @@ body .markdown-source-view .CodeMirror .CodeMirror-activeline,
   color: var(--text-faint);
 }
 
+/* checkboxes */
+.task-list-item-checkbox {
+  filter: none;
+}
+
 /* internal links */
 .cm-s-obsidian span.cm-link,
 .cm-s-obsidian span.cm-hmd-internal-link {
