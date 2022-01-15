@@ -26,7 +26,7 @@
     |_ Tags
     |_ Vim cursor
     |_ Fold toggles
-  |_ Preview
+  |_ Reading Mode
     |_ Typography
     |_ Code
     |_ Blockquotes
@@ -63,6 +63,7 @@
   |_ Sliding Panes (Andy's Mode) by death_au
   |_ Kanban by mgmeyers
   |_ Citations by hans
+  |_ Journey by akaalias
 |_ Icon replacement
 |_ Obsidian Hub
 
@@ -576,11 +577,13 @@ span.cm-hashtag.cm-hashtag-end {
   opacity: 1;
 }
 
-/* ------------ PREVIEW ------------ */
+/* --------- READING MODE --------- */
 
-/* PREVIEW TYPOGRAPHY */
+/* READING MODE TYPOGRAPHY */
 .markdown-preview-view * {
   font-family: var(--text);
+}
+.markdown-preview-view body * {
   font-size: var(--font-adaptive-normal);
 }
 
