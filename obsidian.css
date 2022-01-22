@@ -571,10 +571,16 @@ span.cm-hashtag.cm-hashtag-end {
 /* hide except when hovered/collapsed */
 .markdown-source-view.mod-cm6 .fold-gutter {
   opacity: 0 !important;
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+  opacity: 0;
 }
+.cm-gutterElement:hover .collapse-indicator,
+.markdown-source-view.mod-cm6 .cm-fold-indicator.is-collapsed .collapse-indicator,
+.markdown-source-view.mod-cm6 .cm-fold-indicator:hover .collapse-indicator,
 .markdown-source-view.mod-cm6 .fold-gutter.is-collapsed,
 .markdown-source-view.mod-cm6 .fold-gutter:hover {
   opacity: 1;
+  transition: ease-in-out 200ms;
 }
 
 /* --------- READING MODE --------- */
