@@ -569,8 +569,6 @@ span.cm-hashtag.cm-hashtag-end {
 
 /* FOLD TOGGLES */
 /* hide except when hovered/collapsed */
-.markdown-source-view.mod-cm6 .fold-gutter {
-  opacity: 0 !important;
 .markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
   opacity: 0;
 }
