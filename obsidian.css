@@ -137,8 +137,7 @@ for example links.
   --text-editor: "iA Writer Mono V", "SF Mono", "Roboto Mono", Menlo, monospace;
 
   /* Editor - Live Preview */
-  --text-live-preview: "iA Writer Quattro V", "Roboto Mono", Menlo, Calibri, -apple-system,
-  sans-serif;
+  --text-live-preview: var(--text);
   
   /* Code */
   --font-monospace: "JetBrains Mono", "SF Mono", "Roboto Mono", Menlo, monospace;
@@ -211,7 +210,7 @@ for example links.
 
 /* Desktop font sizes */
 body {
-  --font-adaptive-normal: var(--font-normal);
+  --font-adaptive-normal: 1em;
   --font-adaptive-small: var(--font-small);
   --font-adaptive-smaller: var(--font-smaller);
   --font-adaptive-smallest: var(--font-smallest);
@@ -585,7 +584,7 @@ span.cm-hashtag.cm-hashtag-end {
 /* --------- READING MODE --------- */
 
 /* READING MODE TYPOGRAPHY */
-.markdown-preview-view * {
+.markdown-preview-view {
   font-family: var(--text);
 }
 .markdown-preview-view body * {
