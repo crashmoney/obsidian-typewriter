@@ -302,8 +302,7 @@ body {
     calc(var(--base-s) + 79%),
     calc(var(--base-l) - 2%)
   ); /* #fcf5e4 */
-  --background-primary-alt: #fcf5e4;
-  ); /* #afa898 */
+  --background-primary-alt: #fcf5e4; /* #afa898 */
   --background-secondary: hsl(
     calc(var(--base-h) + 42),
     calc(var(--base-s) + 34%),
