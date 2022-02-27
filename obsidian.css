@@ -1592,10 +1592,57 @@ body .modal-bg {
   color: var(--text-muted);
 }
 
-/* SIDEBAR */
+/* SIDEBARS */
 /* reduce padding size */
 .side-dock-ribbon-action {
   padding: 6px 0px 6px 0px;
+}
+
+/* make sidebar icons stack */
+body .workspace-tabs .workspace-tab-header-container {
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  padding-top: calc((1rem / 2) * 1);
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: calc((1rem / 2) * 1);
+}
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
+.workspace-tab-header.is-before-active .workspace-tab-header-inner,
+.workspace-tab-header.is-after-active .workspace-tab-header-inner {
+  background-color: var(--background-secondary);
+}
+body .workspace-tab-container-inner {
+  min-height: 35px;
+  background-color: var(--background-secondary);
+  border: 2px solid var(--interactive-normal);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+body .workspace-tab-header-inner {
+  width: 35px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+body .workspace-tab-header-inner-icon {
+  display: flex;
+  align-items: center;
+}
+body .workspace-tab-header {
+  border: 2px solid var(--color-transparent);
+  color: var(--text-muted);
+  cursor: pointer;
+}
+body .workspace-tab-header svg {
+  width: 15px;
+  height: 15px;
+}
+body .workspace-tab-header.is-active {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border-radius: 10px;
 }
 
 /* focus mode – make sidebars the same color as background when collapsed */
