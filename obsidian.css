@@ -1194,7 +1194,8 @@ h5:hover .heading-collapse-indicator.collapse-indicator svg,
 input.prompt-input,
 .suggestion-hotkey,
 button,
-button.mod-cta {
+button.mod-cta,
+.tree-item-self.is-clickable {
   font-family: var(--font-ui);
 }
 
@@ -1484,6 +1485,19 @@ body:not(.is-fullscreen):not(.is-mobile) .titlebar {
   background: var(--background-primary);
   top: 0 !important;
   padding-top: 0 !important;
+}
+
+/* forward/back nav buttons */
+.theme-light .titlebar-button {
+  color: var(--text-muted);
+}
+.theme-dark .mod-windows .titlebar-button {
+  padding: 0 10px;
+  opacity: 1;
+  color: var(--text-muted);
+}
+.theme-dark .mod-windows .titlebar-button:hover {
+  background-color: var(--background-primary-alt);
 }
 
 /* FILE EXPLORER */
