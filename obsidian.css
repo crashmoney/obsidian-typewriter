@@ -19,6 +19,7 @@
   |_ Light theme
   |_ Editor
     |_ Typography
+    |_ Fancy cursor
     |_ Highlight active line
     |_ Code
     |_ Tables
@@ -407,6 +408,13 @@ body {
 }
 .markdown-source-view.mod-cm6 .cm-selection {
   font-size: inherit !important;
+}
+
+/* FANCY CURSOR */
+.CodeMirror-cursor,
+.cm-s-obsidian .cm-cursor {
+  border: none;
+  border-right: 2px solid var(--interactive-accent-hover);
 }
 
 /* HIGHLIGHT ACTIVE LINE */
