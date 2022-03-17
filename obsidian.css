@@ -1205,7 +1205,12 @@ input.prompt-input,
 .suggestion-hotkey,
 button,
 button.mod-cta,
-.tree-item-self.is-clickable {
+.tree-item-self.is-clickable,
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'] {
   font-family: var(--font-ui);
 }
 
