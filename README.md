@@ -24,7 +24,6 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - Clean preview without link colors or tags (achieved through YAML header `cssclass: nolink`)
   - available only in Reading Mode
 - Highlight on the active line for focus
-  - available on desktop only
 
 ## Recommended Plugins
 - [Typewriter Scroll by @death_au](https://github.com/deathau/cm-typewriter-scroll-obsidian) for the full typewriter experience
@@ -44,6 +43,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - [Citations by @hans](https://github.com/hans/obsidian-citation-plugin)
 - [Journey by @akaalias](https://github.com/akaalias/obsidian-journey-plugin)
 - [Banners by @noatpad](https://github.com/noatpad/obsidian-banners)
+- [Dataview by @blacksmithgu](https://github.com/blacksmithgu/obsidian-dataview)
 
 ## Development
 This theme is currently under development. Issues and pull requests are welcome.
