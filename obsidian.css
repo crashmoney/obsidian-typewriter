@@ -1637,7 +1637,6 @@ body .workspace-tabs .workspace-tab-header-container {
   padding-left: 0;
   padding-bottom: calc((1rem / 2) * 1);
 }
-.workspace-tab-container-after.is-after-active .workspace-tab-header-inner,
 .workspace-tab-header.is-before-active .workspace-tab-header-inner,
 .workspace-tab-header.is-after-active .workspace-tab-header-inner {
   background-color: var(--background-secondary);
@@ -1672,6 +1671,9 @@ body .workspace-tab-header.is-active {
   background-color: var(--interactive-accent);
   color: var(--text-on-accent);
   border-radius: 10px;
+}
+.workspace-tab-container-after.is-after-active .workspace-tab-header-inner, .workspace-tab-header.is-after-active .workspace-tab-header-inner {
+  border-radius: 0;
 }
 
 /* focus mode – make sidebars the same color as background when collapsed */
