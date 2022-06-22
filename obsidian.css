@@ -243,6 +243,11 @@ body {
   --background-secondary-alt: #000000;
   --background-modifier-border: #333;
   --background-modifier-border-hover: rgb(94, 94, 94);
+  --background-modifier-border-focus: hsl(
+    var(--base-h),
+    var(--base-s),
+    calc(var(--base-l) - 60%)
+  );
   --background-modifier-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
@@ -1048,13 +1053,17 @@ input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
   border-radius: 50%;
-  border: 1px solid var(--background-modifier-border-hover);
+  border: 1.2px solid var(--background-modifier-border-focus);
   padding: 0;
 }
 input[type="checkbox"]:focus,
 input[type="checkbox"]:hover {
   outline: 0;
   border-color: var(--text-faint);
+}
+.markdown-source-view.mod-cm6 .task-list-item-checkbox {
+  width: 18px;
+  height: 18px;
 }
 .checklist-plugin-main .group .compact > .toggle .checked,
 .is-flashing input[type="checkbox"]:checked,
