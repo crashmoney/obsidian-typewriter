@@ -415,6 +415,11 @@ body {
   font-size: inherit !important;
 }
 
+/* make background of notes in the sidebar --background-primary */
+.workspace-tabs .workspace-leaf *.markdown-source-view {
+  background-color: var(--background-primary);
+}
+
 /* FANCY CURSOR */
 .CodeMirror-cursor,
 .cm-s-obsidian .cm-cursor {
