@@ -416,12 +416,12 @@ body {
 }
 
 /* make background of notes in the sidebar --background-primary */
-.workspace-tabs .workspace-leaf *.markdown-source-view {
-  .workspace-tabs .workspace-leaf *.markdown-source-view,
-  .workspace-tabs .workspace-leaf *.markdown-preview-view,
-  .workspace-tabs .workspace-leaf *.empty-state {
+.workspace-tabs .workspace-leaf *.markdown-source-view,
+.workspace-tabs .workspace-leaf *.markdown-source-view,
+.workspace-tabs .workspace-leaf *.markdown-preview-view,
+.workspace-tabs .workspace-leaf *.empty-state {
     background-color: var(--background-primary);
-  }  
+}  
 
 /* FANCY CURSOR */
 .CodeMirror-cursor,
