@@ -193,7 +193,8 @@ body {
   --background-primary-alt: #202020;
   --background-secondary: hsl(
     calc(var(--base-h) + 30),
-    calc(var(--base-s) + 11.5%) calc(var(--base-l) - 75.6%)
+    calc(var(--base-s) + 11.5%),
+    calc(var(--base-l) - 75.6%)
   );
   --background-secondary-alt: #000000;
   --background-modifier-border: #333;
