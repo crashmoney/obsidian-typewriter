@@ -148,7 +148,11 @@ body {
     var(--theme-accent-l),
     0.8
   );
-  --text-accent: hsl(var(--theme-accent-h), var(--accent-s), var(--accent-l));
+  --text-accent: hsl(
+    var(--theme-accent-h),
+    var(--theme-accent-s),
+    var(--theme-accent-l)
+  );
   --text-accent-hover: hsl(
     var(--theme-accent-h),
     var(--theme-accent-s),
