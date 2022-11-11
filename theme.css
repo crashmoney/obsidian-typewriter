@@ -1,6 +1,6 @@
 /* -------- FRONT MATTER ---------
 ** Theme: Obsidian Typewriter
-** Version number: 2.0.4
+** Version number: 2.1.0
 ** GitHub Repo: https://github.com/crashmoney/obsidian-typewriter
 ** Made by: crashmoney
 ----------------------------------- */
@@ -348,10 +348,17 @@ body {
 
 /* MARKDOWN FORMATTING */
 /* fade formatting tags out */
-.CodeMirror-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list), /* legacy editor */
-.markdown-source-view.mod-cm6 .cm-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list) /* CM6 editor */ {
+.shrink-formatting .CodeMirror-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list), /* legacy editor */
+.shrink-formatting .markdown-source-view.mod-cm6 .cm-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list) /* CM6 editor */ {
   color: var(--text-faint);
   font-size: var(--font-smaller) !important;
+}
+
+/* HIGHLIGHT ACTIVE LINE */
+.active-line-highlight .markdown-source-view .CodeMirror-activeline,
+.active-line-highlight .markdown-source-view.mod-cm6 .cm-active.cm-line {
+  background: var(--background-secondary);
+  border-radius: 8px;
 }
 
 /* make sidebar notes' background var(--background-primary) */
@@ -413,6 +420,31 @@ body .modal-bg {
 .kanban-plugin__grow-wrap>textarea {
   background-color: var(--background-primary);
 }
+
+/* +++ STYLE SETTINGS by @mgmeyers */
+
+/* @settings
+
+name: Typewriter
+id: obsidian-typewriter
+settings:
+    -
+        id: typewriter-editor
+        title: Editor
+        type: heading
+        level: 2
+    -
+        id: shrink-formatting
+        title: Shrink & fade Markdown formatting symbols
+        type: class-toggle
+        default: on
+    -
+        id: active-line-highlight
+        title: Highlight the active line
+        type: class-toggle
+        default: on
+
+*/
 
 /* +++ OBSIDIAN HUB */
 /* @plugins
