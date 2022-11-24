@@ -1,6 +1,6 @@
 /* -------- FRONT MATTER ---------
 ** Theme: Obsidian Typewriter
-** Version number: 2.1.0
+** Version number: 2.1.1
 ** GitHub Repo: https://github.com/crashmoney/obsidian-typewriter
 ** Made by: crashmoney
 ----------------------------------- */
@@ -276,12 +276,12 @@ body {
     var(--font-text-override);
   --font-monospace-theme: "JetBrains Mono";
 
-  --font-normal: 16px;
-  --font-small: 13px;
-  --font-smaller: 11px;
-  --font-smallest: 10px;
+  --font-normal: 1em;
+  --font-small: 0.813em;
+  --font-smaller: 0.688em;
+  --font-smallest: 0.625em;
 
-  --code-size: calc(var(--font-normal) + 2px);
+  --code-size: var(--font-normal);
   --code-normal: var(--blue);
 
   --h1: 1.8em;
