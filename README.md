@@ -1,6 +1,6 @@
 # Obsidian Typewriter
 
-Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focused writing experience.
+Typewriter is an [Obsidian](https://www.obsidian.md) October-winning theme designed for a focused writing experience.
 
 ![cover](cover.jpg)
 
@@ -51,6 +51,8 @@ Typewriter is an [Obsidian](https://www.obsidian.md) theme designed for a focuse
 - [Journey by @akaalias](https://github.com/akaalias/obsidian-journey-plugin)
 - [Banners by @noatpad](https://github.com/noatpad/obsidian-banners)
 - [Dataview by @blacksmithgu](https://github.com/blacksmithgu/obsidian-dataview)
+- [Style Settings by @mgmeyers](https://github.com/mgmeyers/obsidian-style-settings)
+- [Obsidian TODO by @larslockefeer](https://github.com/larslockefeer/obsidian-plugin-todo)
 
 ## Development
 
