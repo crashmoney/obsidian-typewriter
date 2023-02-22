@@ -15,7 +15,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) October-winning theme desig
   - Useful for mobile and small displays
 - Seamless embeds, without file titles
 - Cool dark mode and warm light mode
-- Compatibility with community plugins (see [Plugin Compatibility](#plugin-compatability))
+- Compatibility with community plugins (see [Plugin Compatibility](#plugin-compatibility))
 - Compatibility with Obsidian Hub
 - Highlight on the active line for focus
   - Currently unavailable in v2.0.0 (Obsidian version 0.16.0 onwards)
@@ -35,7 +35,7 @@ Typewriter is an [Obsidian](https://www.obsidian.md) October-winning theme desig
 - [Typewriter Scroll by @death_au](https://github.com/deathau/cm-typewriter-scroll-obsidian) for the full typewriter experience
   - This plugin comes also with a focus mode, which dims every line except the active one
 
-## Plugin Compatability
+## Plugin Compatibility
 
 *This list is non-exhaustive; other plugins I haven't tested yet may work. The plugins on this list are plugins I've tested or added specific support for.*
 
