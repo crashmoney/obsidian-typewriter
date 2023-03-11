@@ -398,7 +398,8 @@ body .modal .prompt-results {
   padding: calc((1rem * 2) * 1);
 }
 body .modal-bg {
-  backdrop-filter: blur(8px);
+  /*backdrop-filter: blur(8px);*/ /*causes slowdowns*/
+  background-color: rgb(8, 8, 8);
 }
 
 /* make workspace frameless */
@@ -407,6 +408,32 @@ body .modal-bg {
 .mod-macos.is-hidden-frameless:not(.is-popout-window)
   .sidebar-toggle-button.mod-right {
   background-color: var(--background-primary);
+}
+
+/* centered tables, taken from Sanctum */
+body {
+  --table-header-size: var(--font-small);
+  --table-header-weight: var(--font-semibold);
+  --table-header-color: var(--text-normal);
+}
+.cm-embed-block.markdown-rendered .block-language-dataview,
+.markdown-rendered table,
+.markdown-rendered .table-view-table {
+  margin-bottom: 24px;
+  width: 100%;
+}
+.cm-embed-block.markdown-rendered .block-language-dataview th,
+.cm-embed-block.markdown-rendered .block-language-dataview td,
+.markdown-rendered table th,
+.markdown-rendered table td,
+.markdown-rendered .table-view-table th,
+.markdown-rendered .table-view-table td {
+  padding: 4px 8px 4px 16px;
+}
+.cm-embed-block.markdown-rendered .block-language-dataview td,
+.markdown-rendered table td,
+.markdown-rendered .table-view-table td {
+  font-size: var(--font-small);
 }
 
 /* +++ PLUGINS */
