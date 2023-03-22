@@ -428,7 +428,7 @@ body {
 .markdown-rendered table td,
 .markdown-rendered .table-view-table th,
 .markdown-rendered .table-view-table td {
-  padding: 4px 8px 4px 16px;
+  padding: 6px 18px 6px 18px;
 }
 .cm-embed-block.markdown-rendered .block-language-dataview td,
 .markdown-rendered table td,
