@@ -410,7 +410,13 @@ body .modal-bg {
   background-color: var(--background-primary);
 }
 
-/* centered tables, taken from Sanctum */
+/* Remove note-to-note link underline */
+:root body {
+  --link-decoration: none;
+  --link-decoration-hover: none;
+}
+
+/* centered tables, taken from sanctum */
 body {
   --table-header-size: var(--font-small);
   --table-header-weight: var(--font-semibold);
@@ -419,7 +425,7 @@ body {
 .cm-embed-block.markdown-rendered .block-language-dataview,
 .markdown-rendered table,
 .markdown-rendered .table-view-table {
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
   width: 100%;
 }
 .cm-embed-block.markdown-rendered .block-language-dataview th,
@@ -428,12 +434,47 @@ body {
 .markdown-rendered table td,
 .markdown-rendered .table-view-table th,
 .markdown-rendered .table-view-table td {
-  padding: 4px 8px 4px 16px;
+  padding: 0.6em 1.8em 0.6em 1.8em;
 }
 .cm-embed-block.markdown-rendered .block-language-dataview td,
 .markdown-rendered table td,
 .markdown-rendered .table-view-table td {
   font-size: var(--font-small);
+}
+
+/* h1 and surrounding p margin variables, thanks to FireIsGood#0733 */
+:root h1 {
+  margin: 0;
+}
+.markdown-preview-view div:has(>h1) + div > p {
+  margin-top: 1em;
+}
+.markdown-preview-view div:has(+div>h1) > p {
+  margin-bottom: .33em;
+}
+
+/* FIX: margin-top funkiness present since Obsidian 1.1+ */
+.markdown-source-view table {
+	margin-top: 0;
+}
+
+/* EDITOR: font-scalable edit-block-button */
+/* add header padding for button if last column is right-aligned */
+.markdown-source-view table th:last-child[align="right"] {
+	padding-right: 2.767527675276753em;
+	padding-left: 0.8324108241082411em; /* balances padding-right */
+}
+/* button attributes */
+.markdown-source-view.mod-cm6 .edit-block-button {
+  opacity: 1;
+	top: 0.3em;
+	right: 0.25em;
+	align-items: center;
+	justify-content: center;
+}
+.markdown-source-view div.edit-block-button svg {
+	width: 1.2em;
+	height: 1em;
 }
 
 /* +++ PLUGINS */
