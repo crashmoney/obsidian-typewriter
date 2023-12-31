@@ -275,7 +275,7 @@ body {
   --font-editor-theme: "iA Writer Mono V", var(--font-text-theme),
     var(--font-text-override);
   --font-monospace-theme: "JetBrains Mono";
-
+  
   --font-normal: 1em;
   --font-small: 0.813em;
   --font-smaller: 0.688em;
@@ -398,7 +398,7 @@ body .modal .prompt-results {
   padding: calc((1rem * 2) * 1);
 }
 body .modal-bg {
-  /*backdrop-filter: blur(8px);*/ /*causes slowdowns*/
+  /* backdrop-filter: blur(8px); */ /* causes slowdowns */
   background-color: rgb(8, 8, 8);
 }
 
@@ -410,7 +410,7 @@ body .modal-bg {
   background-color: var(--background-primary);
 }
 
-/* Remove note-to-note link underline */
+/* remove note-to-note link underline */
 :root body {
   --link-decoration: none;
   --link-decoration-hover: none;
@@ -485,7 +485,7 @@ body {
 }
 
 /* KANBAN by @mgmeyers */
-.kanban-plugin__grow-wrap>textarea {
+.kanban-plugin__grow-wrap > textarea {
   background-color: var(--background-primary);
 }
 
@@ -495,12 +495,13 @@ div.todo-item-view-item span.due-date {
   color: white; /* makes due dates legible */
 }
 
-div.todo-item-view-item span.due-date.overdue { 
+div.todo-item-view-item span.due-date.overdue {
   background-color: var(--orange);
 }
 
 /* make toolbar items more legible */
-div.todo-item-view-item-link svg, div.todo-item-view-toolbar-item svg {
+div.todo-item-view-item-link svg,
+div.todo-item-view-toolbar-item svg {
   fill: var(--text-faint);
 }
 /* make focused toolbar item follow the theme accent */
