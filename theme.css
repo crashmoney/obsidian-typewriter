@@ -379,6 +379,18 @@ body {
   font-weight: var(--h1-weight);
 }
 
+/* increase space between editor and metadata – credit to Minimal */
+.metadata-container {
+  --input-height: 2rem;
+}
+.markdown-source-view .metadata-container {
+  transform: translateX(-4px);
+}
+.is-phone {
+  --metadata-label-font-size: var(--font-adaptive-smaller);
+  --metadata-input-font-size: var(--font-adaptive-smaller);
+}
+
 /* make cursor accent color */
 .CodeMirror-cursor {
   background-color: var(--color-accent);
