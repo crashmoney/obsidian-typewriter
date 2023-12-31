@@ -72,6 +72,7 @@ body {
   --base-d: 15%; /* base lightness for dark mode. 0 is black */
   --base-l: 96%; /* base lightness for light mode. 100 is white */
 
+  /* rgb: 81, 157, 92 */
   --theme-accent-h: 129;
   --theme-accent-s: 31.9%;
   --theme-accent-l: 46.7%;
