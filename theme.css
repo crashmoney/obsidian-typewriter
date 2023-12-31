@@ -275,7 +275,9 @@ body {
   --font-editor-theme: "iA Writer Mono V", var(--font-text-theme),
     var(--font-text-override);
   --font-monospace-theme: "JetBrains Mono";
-  
+
+  --metadata-input-font-size: var(--font-small);
+
   --font-normal: 1em;
   --font-small: 0.813em;
   --font-smaller: 0.688em;
@@ -446,35 +448,35 @@ body {
 :root h1 {
   margin: 0;
 }
-.markdown-preview-view div:has(>h1) + div > p {
+.markdown-preview-view div:has(> h1) + div > p {
   margin-top: 1em;
 }
-.markdown-preview-view div:has(+div>h1) > p {
-  margin-bottom: .33em;
+.markdown-preview-view div:has(+ div > h1) > p {
+  margin-bottom: 0.33em;
 }
 
 /* FIX: margin-top funkiness present since Obsidian 1.1+ */
 .markdown-source-view table {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 /* EDITOR: font-scalable edit-block-button */
 /* add header padding for button if last column is right-aligned */
 .markdown-source-view table th:last-child[align="right"] {
-	padding-right: 2.767527675276753em;
-	padding-left: 0.8324108241082411em; /* balances padding-right */
+  padding-right: 2.767527675276753em;
+  padding-left: 0.8324108241082411em; /* balances padding-right */
 }
 /* button attributes */
 .markdown-source-view.mod-cm6 .edit-block-button {
   opacity: 1;
-	top: 0.3em;
-	right: 0.25em;
-	align-items: center;
-	justify-content: center;
+  top: 0.3em;
+  right: 0.25em;
+  align-items: center;
+  justify-content: center;
 }
 .markdown-source-view div.edit-block-button svg {
-	width: 1.2em;
-	height: 1em;
+  width: 1.2em;
+  height: 1em;
 }
 
 /* +++ PLUGINS */
