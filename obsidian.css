@@ -1558,6 +1558,11 @@ body:not(.is-fullscreen):not(.is-mobile) .titlebar {
   background-color: var(--background-primary-alt);
 }
 
+/* fix background color for titlebar buttons on Windows */
+div.titlebar-button-container.mod-right {
+  background-color: var(--background-primary) !important;
+}
+
 /* FILE EXPLORER */
 /* set file title color */
 .nav-file-title-content,
