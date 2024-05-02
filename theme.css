@@ -473,6 +473,11 @@ body {
   margin-top: 0;
 }
 
+/* FIX: background color for titlebar buttons on Windows */
+div.titlebar-button-container.mod-right {
+  background-color: var(--background-primary) !important;
+}
+
 /* EDITOR: font-scalable edit-block-button */
 /* add header padding for button if last column is right-aligned */
 .markdown-source-view table th:last-child[align="right"] {
