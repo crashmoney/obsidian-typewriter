@@ -202,6 +202,8 @@ body {
 
   --icon-color: var(--text-muted);
   --icon-hex: 000;
+
+  --graph-line-color: #c0c9ce;
 }
 
 /* +++ DARK MODE */
@@ -279,6 +281,8 @@ body {
   --scrollbar-bg: rgba(255, 255, 255, 0.05);
   --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
   --highlight-mix-blend-mode: lighten;
+
+  --graph-line-color: #6f7577;
 }
 
 /* +++ TYPOGRAPHY & FONTS */
@@ -507,6 +511,11 @@ div.titlebar-button-container.mod-right {
 .markdown-source-view div.edit-block-button svg {
   width: 1.2em;
   height: 1em;
+}
+
+/* DARKEN GRAPH VIEW LINS */
+.graph-view.color-line {
+  color: var(--graph-line-color);
 }
 
 /* +++ PLUGINS */
