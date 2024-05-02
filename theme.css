@@ -518,6 +518,18 @@ div.titlebar-button-container.mod-right {
   color: var(--graph-line-color);
 }
 
+/* FOLD INDICATOR SPACING */
+/* prevent overlap with text */
+
+div.cm-fold-indicator {
+  margin-right: 0;
+}
+
+.markdown-source-view.mod-cm6 .cm-fold-indicator .collapse-indicator {
+  padding-right: 4px;
+  right: 0;
+}
+
 /* +++ PLUGINS */
 
 /* ZOOM by @vslinko */
