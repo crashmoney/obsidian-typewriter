@@ -98,7 +98,7 @@ body {
   */
 }
 
-/* +++ LIGHT MDOE */
+/* +++ LIGHT MODE */
 .theme-light {
   --background-primary: hsl(
     calc(var(--base-h) + 44),
