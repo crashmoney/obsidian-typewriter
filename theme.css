@@ -373,6 +373,12 @@ body {
   font-size: var(--font-smaller) !important;
 }
 
+/* increase blockquote height */
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 /* HIGHLIGHT ACTIVE LINE */
 .active-line-highlight .markdown-source-view .CodeMirror-activeline,
 .active-line-highlight .markdown-source-view.mod-cm6 .cm-active.cm-line {
@@ -380,6 +386,7 @@ body {
   border-radius: 8px;
 }
 
+/* SIDEBAR NOTES */
 /* make sidebar notes' background var(--background-primary) */
 .mod-right-split .markdown-preview-view,
 .mod-left-split .markdown-preview-view,
