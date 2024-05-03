@@ -34,6 +34,8 @@ Typewriter is an [Obsidian](https://www.obsidian.md) October-winning theme desig
 
 - [Typewriter Scroll by @death_au](https://github.com/deathau/cm-typewriter-scroll-obsidian) for the full typewriter experience
   - This plugin comes also with a focus mode, which dims every line except the active one
+- [Click Clack by @Acylation](https://github.com/Acylation/obsidian-click-clack) (still in beta) for typewriter sounds
+- [Style Settings by @mgmeyers](https://github.com/mgmeyers/obsidian-style-settings) for easy customization
 
 ## Plugin Compatibility
 
