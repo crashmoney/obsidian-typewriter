@@ -295,7 +295,7 @@ body {
 
   --metadata-input-font-size: var(--font-small);
 
-  --font-normal: 1em;
+  --font-normal-size: 1em;
   --font-small: 0.813em;
   --font-smaller: 0.688em;
   --font-smallest: 0.625em;
