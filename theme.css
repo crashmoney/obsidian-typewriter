@@ -454,30 +454,29 @@ body .modal-bg {
   --link-decoration-hover: none;
 }
 
-/* centered tables, taken from sanctum */
-body {
-  --table-header-size: var(--font-small);
-  --table-header-weight: var(--font-semibold);
-  --table-header-color: var(--text-normal);
+/* centered tables, simplified */
+.markdown-rendered {
+	table {
+		width: 100%;
+		th {
+			padding: calc(1em/3) calc(2em/3);
+		}
+		td {
+			padding: calc(1em/6) calc(2em/3);
+		}
+	}
 }
-.cm-embed-block.markdown-rendered .block-language-dataview,
-.markdown-rendered table,
-.markdown-rendered .table-view-table {
-  margin-bottom: 1.5em;
-  width: 100%;
-}
-.cm-embed-block.markdown-rendered .block-language-dataview th,
-.cm-embed-block.markdown-rendered .block-language-dataview td,
-.markdown-rendered table th,
-.markdown-rendered table td,
-.markdown-rendered .table-view-table th,
-.markdown-rendered .table-view-table td {
-  padding: 0.6em 1.8em 0.6em 1.8em;
-}
-.cm-embed-block.markdown-rendered .block-language-dataview td,
-.markdown-rendered table td,
-.markdown-rendered .table-view-table td {
-  font-size: var(--font-small);
+
+.markdown-source-view .cm-content .cm-table-widget {
+	.table-wrapper {
+		width: 100%;
+		th .table-cell-wrapper {
+			padding: calc(1em/3) calc(2em/3);
+		}
+		td .table-cell-wrapper {
+			padding: calc(1em/6) calc(2em/3);
+		}
+	}
 }
 
 /* h1 and surrounding p margin variables, thanks to FireIsGood#0733 */
