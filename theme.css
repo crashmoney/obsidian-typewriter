@@ -287,10 +287,10 @@ body {
 body {
   --font-text-theme: "iA Writer Quattro S";
   --font-interface-theme: var(--font-text-theme);
-  --font-editor-theme: "iA Writer Mono V", var(--font-text-theme),
-    var(--font-text-override);
-  --font-monospace-theme: "JetBrains Mono";
-
+  --font-editor-theme: "iA Writer Mono V";
+  --font-editor: var(--font-text-theme), var(--font-text-override), var(--font-editor-theme);
+  --font-monospace-default: "JetBrains Mono";
+  --font-monospace: var(--font-monospace-override), var(--font-monospace-theme), var(--font-monospace-default);
   --metadata-input-font-size: var(--font-small);
 
   --font-normal-size: 1em;
