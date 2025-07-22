@@ -202,6 +202,8 @@ body {
   --icon-hex: 000;
 
   --graph-line-color: #c0c9ce;
+  
+  --code-background: #eee8d5;
 }
 
 /* +++ DARK MODE */
