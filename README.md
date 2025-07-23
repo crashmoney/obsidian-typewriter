@@ -59,7 +59,7 @@ If you enjoy the theme, consider buying me a Ko-Fi! It helps keep the project go
 - [Dataview by @blacksmithgu](https://github.com/blacksmithgu/obsidian-dataview)
 - [Style Settings by @mgmeyers](https://github.com/mgmeyers/obsidian-style-settings)
 - [Obsidian TODO by @larslockefeer](https://github.com/larslockefeer/obsidian-plugin-todo)
-- [Obsidian Image Export](https://github.com/zhouhua/obsidian-export-image)
+- [Obsidian Image Export by @zhouhua](https://github.com/zhouhua/obsidian-export-image)
 
 ## Development
 
