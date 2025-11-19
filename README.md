@@ -6,6 +6,8 @@ Typewriter is an [Obsidian](https://www.obsidian.md) October-winning theme desig
  
 If you enjoy the theme, consider buying me a Ko-Fi! It helps keep the project going :)
 
+**EDIT (2025-11-20)**: Life has freed up a little, so I'm back to working on updates to address issues and add new features! It'll take me some time, so I will be prioritizing a little (e.g. accessibility issues like #56 are highest-priority).
+
 ![cover](cover.jpg)
 
 ## Features
