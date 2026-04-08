@@ -387,6 +387,12 @@ body {
   border-radius: 8px;
 }
 
+/* NUMBERED LISTS IN CALLOUTS */
+.markdown-preview-view .callout ol,
+.markdown-source-view.mod-cm6 .callout ol{
+  padding-inline-start: 0.5em; /* prova 2.0–2.6em */
+}
+
 /* SIDEBAR NOTES */
 /* make sidebar notes' background var(--background-primary) */
 .mod-right-split .markdown-preview-view,
