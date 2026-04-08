@@ -295,6 +295,7 @@ body {
   --font-monospace: var(--font-monospace-override), var(--font-monospace-theme), var(--font-monospace-default);
   font-variant-emoji: unicode !important; /* emoji will override numbers and special characters */
   --metadata-input-font-size: var(--font-small);
+  --bases-table-font-size: var(--font-normal-size);
 
   --font-normal-size: 1em;
   --font-small: 0.813em;
