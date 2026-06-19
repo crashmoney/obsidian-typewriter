@@ -360,7 +360,7 @@ body {
 
 /* source mode */
 .markdown-source-view {
-  font-family: var(--font-text-theme);
+  font-family: var(--font-text);
 }
 
 /* live preview */
