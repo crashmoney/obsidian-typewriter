@@ -17,7 +17,7 @@
 |_ OBSIDIAN HUB
 */
 
-/* +++ FONT FACES */
+/* +++ FONT FACES {{{ */
 
 @font-face /* iA Writer Mono V */ {
   font-family: "iA Writer Mono V";
@@ -75,7 +75,9 @@
   font-display: swap;
 }
 
-/* +++ COLOR VARIABLES */
+/* }}} */
+
+/* +++ COLOR VARIABLES {{{ */
 body {
   --base-h: 0;
   --base-s: 0%;
@@ -96,7 +98,7 @@ body {
   */
 }
 
-/* +++ LIGHT MODE */
+/* +++ LIGHT MODE {{{ */
 .theme-light {
   --background-primary: hsl(
     calc(var(--base-h) + 44),
@@ -205,8 +207,9 @@ body {
   
   --code-background: #eee8d5;
 }
+/* }}} */
 
-/* +++ DARK MODE */
+/* +++ DARK MODE {{{ */
 .theme-dark {
   --background-primary: hsl(var(--base-h), var(--base-s), var(--base-d));
   --background-primary-alt: #202020;
@@ -284,8 +287,11 @@ body {
 
   --graph-line-color: #6f7577;
 }
+/* }}} */
 
-/* +++ TYPOGRAPHY & FONTS */
+/* }}} */
+
+/* +++ TYPOGRAPHY & FONTS {{{ */
 body {
   --font-text-theme: "iA Writer Quattro S";
   --font-interface-theme: var(--font-text-theme);
@@ -402,8 +408,9 @@ body {
 .mod-left-split .markdown-source-view.mod-cm6 .cm-scroller {
   background-color: var(--background-primary);
 }
+/* }}} */
 
-/* +++ UI ELEMENTS */
+/* +++ UI ELEMENTS {{{ */
 
 /* make inline title equal to H1 */
 .inline-title {
@@ -546,6 +553,8 @@ div.cm-fold-indicator {
 
 /* +++ PLUGINS */
 
+/* +++ PLUGINS {{{ */
+
 /* ZOOM by @vslinko */
 .zoom-plugin-header {
   font-family: var(--font-interface-theme);
@@ -612,8 +621,9 @@ settings:
         default-dark: '#519D5C'
 
 */
+/* }}} */
 
-/* +++ OBSIDIAN HUB */
+/* +++ OBSIDIAN HUB {{{ */
 /* @plugins
 core:
 - audio-recorder
@@ -653,3 +663,4 @@ community:
 - obsidian-style-settings
 - obsidian-plugin-todo
 */
+/* }}} */
