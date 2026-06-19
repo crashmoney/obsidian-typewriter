@@ -373,7 +373,7 @@ body {
   font-family: var(--font-text-theme);
 }
 
-/* MARKDOWN FORMATTING */
+/* !! MARKDOWN FORMATTING */
 /* fade formatting tags out */
 .shrink-formatting .CodeMirror-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list), /* legacy editor */
 .shrink-formatting .markdown-source-view.mod-cm6 .cm-line span.cm-formatting:not(.cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link, .cm-s-obsidian span.cm-url, .cm-s-obsidian span.cm-attribute, .cm-s-obsidian span.cm-quote, span.cm-hashtag.cm-hashtag-begin, .cm-s-obsidian span.cm-formatting-list) /* CM6 editor */ {
@@ -387,20 +387,20 @@ body {
   padding-bottom: 7px;
 }
 
-/* HIGHLIGHT ACTIVE LINE */
+/* !! HIGHLIGHT ACTIVE LINE */
 .active-line-highlight .markdown-source-view .CodeMirror-activeline,
 .active-line-highlight .markdown-source-view.mod-cm6 .cm-active.cm-line {
   background: var(--background-secondary);
   border-radius: 8px;
 }
 
-/* NUMBERED LISTS IN CALLOUTS */
+/* !! NUMBERED LISTS IN CALLOUTS */
 .markdown-preview-view .callout ol,
 .markdown-source-view.mod-cm6 .callout ol{
   padding-inline-start: 0.5em; /* prova 2.0–2.6em */
 }
 
-/* SIDEBAR NOTES */
+/* !! SIDEBAR NOTES */
 /* make sidebar notes' background var(--background-primary) */
 .mod-right-split .markdown-preview-view,
 .mod-left-split .markdown-preview-view,
@@ -534,12 +534,12 @@ div.titlebar-button-container.mod-right {
   height: 1em;
 }
 
-/* DARKEN GRAPH VIEW LINS */
+/* !! DARKEN GRAPH VIEW LINS */
 .graph-view.color-line {
   color: var(--graph-line-color);
 }
 
-/* FOLD INDICATOR SPACING */
+/* !! FOLD INDICATOR SPACING */
 /* prevent overlap with text */
 
 div.cm-fold-indicator {
