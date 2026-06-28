@@ -85,10 +85,9 @@ body {
   --base-l: 96%; /* base lightness for light mode. 100 is white */
 
   /* Get accent from Style settings, defaults to rgb: 81, 157, 92 for both dark and light themes */
-  --theme-accent-h: var(--theme-accent-sel-h, 129);
-  --theme-accent-s: var(--theme-accent-sel-s, 31.9%);
-  --theme-accent-l: var(--theme-accent-sel-l, 46.7%);
-  --theme-accent-d: var(--theme-accent-sel-d, 46.7%);
+  --theme-accent-h: var(--accent-h, 129);
+  --theme-accent-s: var(--accent-s, 31.9%);
+  --theme-accent-l: var(--accent-l, 46.7%);
 
   /* WIP - working with relative HSL values
   --theme-accent-h: calc(var(--accent-h) - 125);
@@ -243,18 +242,18 @@ body {
   --vim-cursor: hsla(
     var(--theme-accent-h),
     var(--theme-accent-s),
-    var(--theme-accent-d),
+    var(--theme-accent-l),
     0.8
   );
   --color-accent: hsl(
     var(--theme-accent-h),
     var(--theme-accent-s),
-    var(--theme-accent-d)
+    var(--theme-accent-l)
   );
   --text-accent-hover: hsl(
     var(--theme-accent-h),
     var(--theme-accent-s),
-    calc(var(--theme-accent-d) - 10%)
+    calc(var(--theme-accent-l) - 10%)
   );
   --text-normal: rgb(197, 184, 161);
   --text-muted: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 45%));
@@ -271,7 +270,7 @@ body {
   --interactive-accent: hsl(
     var(--theme-accent-h),
     var(--theme-accent-s),
-    calc(var(--theme-accent-d) + 10%)
+    calc(var(--theme-accent-l) + 10%)
   );
   --interactive-accent-hover: hsl(
     var(--theme-accent-h),
@@ -933,19 +932,6 @@ settings:
         title: Highlight the active line
         type: class-toggle
         default: on
-    -
-        id: theme-accent-sel
-        title: Theme accent
-        type: variable-themed-color
-        opacity: false
-        format: hex
-        alt-format:
-            -
-                id: theme-accent-sel
-                format: hsl-split
-        default-light: '#519D5C'
-        default-dark: '#519D5C'
-
 */
 /* }}} */
 
