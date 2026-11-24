@@ -369,7 +369,7 @@ body {
 
 /* reading mode */
 .markdown-preview-view {
-  font-family: var(--font-text-theme);
+  font-family: var(--font-text);
 }
 
 /* !! MARKDOWN FORMATTING */
